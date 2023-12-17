@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="./css/null.css"/>
+        <link rel="stylesheet" href="./css/main.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+        <title>Портфолио | Артем Мещеряков</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="wrapper header__wrapper">
+                <a href="/" class="logo header__logo">
+                    <img src="./img/logo.jpg" alt="logo" class="logo__image">
+                </a>
+
+                <nav class="header__nav">
+                    <a href="#about" class="link header__link">О себе</a>
+                    <a href="#works" class="link header__link">Портфолио</a>
+                    <a href="#contacts" class="link header__link">Контакты</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="main-screen main__section">
+                <div class="main-screen__bg">
+                    <img src="./img/main-bg.jpg" class="main-screen__image" alt="main-bg">
+                </div>
+
+                <div class="wrapper main-screen__wrapper">
+                    <div class="main-screen__content">
+                        <h1 class="main-screen__title">Сайт-Портфолио</h1>
+                        <p class="main-screen__subtitle">Верстальщик - <span class="color-text color-text_purple">Артём Мещеряков</span></p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="about main__section">
+                <div class="wrapper about__wrapper">
+                    <div class="section-title about__title">
+                        <h2 class="section-title__title">О себе</h2>
+                    </div>
+                    <div class="about__content">
+                        <div class="about__left">
+                            <div class="about__desc desc-block">
+                                <p class="desc-block__text">Меня зовут Артём Мещеряков, и занимаюсь созданием веб-сайтов, 
+                                    сайтов-визитка. Мой опыт работы меньше года.</p>
+                                <span class="desc-block__subtext">Буду рад сотрудничеству</span>
+                            </div>
+                            <div class="about__skills skills-block">
+                                <span class="skills-block__title">Мои навыки</span>
+                                
+                                <ul class="skills-block__list">
+                                    <li class="skills-block__item skill">
+                                        <div class="skill__top">
+                                            <span class="skill__name">HTML</span>
+                                            <span class="skill__value">50%</span>
+                                        </div>
+                                        <div class="skill__progress">
+                                            <div class="skill__progress-bar" style="width: 50%;"></div>
+                                        </div>
+                                    </li>
+                                    <li class="skills-block__item skill">
+                                        <div class="skill__top">
+                                            <span class="skill__name">CSS</span>
+                                            <span class="skill__value">25%</span>
+                                        </div>
+                                        <div class="skill__progress">
+                                            <div class="skill__progress-bar" style="width: 25%;"></div>
+                                        </div>
+                                    </li>
+                                    <li class="skills-block__item skill">
+                                        <div class="skill__top">
+                                            <span class="skill__name">C#</span>
+                                            <span class="skill__value">25%</span>
+                                        </div>
+                                        <div class="skill__progress">
+                                            <div class="skill__progress-bar" style="width: 25%;"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="about__right">
+                            <div class="about__picture">
+                                <img src="./img/my-photo.jpg" class="about__image" alt="Artem Mescheryakov Photo">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="works" class="works main__section">
+                <div class="wrapper works__wrapper">
+                    <div class="section-title works__title">
+                        <h2 class="section-title__title">ПОРТФОЛИО</h2>
+                        <p class="section-title__subtitle">мои работы</p>
+                    </div>
+
+                    <div class="works__list">
+                        <a href="#" class="works__item works-item">
+                            <img src="./img/work-1.jpg" class="works-item__image" alt="">
+                        </a>
+                        <a href="#" class="works__item works-item">
+                            <img src="./img/work-2.jpg" class="works-item__image" alt="">
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contacts" class="contacts main__section">
+                <div class="wrapper contacts__wrapper">
+                    <div class="section-title contacts__title">
+                        <h2 class="section-title__title">ЗАКАЗАТЬ САЙТ</h2>
+                    </div> 
+
+                    <div class="contacts__content">
+                        <div class="contacts__left">
+                            <div class="contacts__desc desc-block">
+                                <p class="desc-block__text">Оставьте заявку, я свяжусь с вами в ближайшее время, чтобы обсудить детали</p>
+                                <span class="desc-block__subtext">Буду рад сотрудничеству</span>
+                            </div>
+                        </div>
+
+                        <div class="contacts__right">
+                            <form action="post" class="form">
+                                <h3 class="form__title">ОСТАВИТЬ ЗАЯВКУ</h3>
+
+                                <div class="form__items">
+                                    <div class="form__item">
+                                        <div class="default-input">
+                                            <label for="contact-name" class="default-input__label">Как вас зовут?*</label>
+                                            <input id="contact-name" type="text" placeholder="Введите ваше имя" required class="default-input__input">
+                                        </div>
+                                    </div>
+                                    <div class="form__item">
+                                        <div class="default-input">
+                                            <label for="contact-email" class="default-input__label">Ваш e-mail*</label>
+                                            <input id="contact-email" type="email" placeholder="Введите ваш e-mail" required class="default-input__input">
+                                        </div>
+                                    </div>
+                                    <div class="form__item">
+                                        <div class="default-input">
+                                            <label for="contact-comment" class="default-input__label">Ваш комментарий</label>
+                                            <textarea id="contact-comment" placeholder="Введите ваше сообщение" class="default-input__textarea"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form__submit">
+                                    <button class="btn form__submit-btn" type="submit">Отправить</button>
+                                    <p class="form__policy">Нажимая кнопку “Отправить”, Вы даете информированное <a href="#">согласие на обработку своих персональных данных</a></p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="wrapper footer__wrapper">
+                <div class="footer__top">
+                    <a href="/" class="logo footer__logo">
+                        <img src="./img/logo.jpg" alt="logo" class="logo__image">
+                    </a>
+    
+                    <nav class="footer__nav">
+                        <a href="#about" class="link footer__link">О СЕБЕ</a>
+                        <a href="#works" class="link footer__link">ПОРТФОЛИО</a>
+                        <a href="#contacts" class="link footer__link">КОНТАКТЫ</a>
+                    </nav>
+                </div>
+                <div class="footer__bottom">
+                    <span class="footer__copy">© 2023 Артём Мещеряков</span>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>
